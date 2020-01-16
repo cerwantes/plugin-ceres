@@ -76,6 +76,7 @@ use Ceres\Widgets\Item\ItemDataTableWidget;
 use Ceres\Widgets\Item\ItemImageWidget;
 use Ceres\Widgets\Item\ItemPriceWidget;
 use Ceres\Widgets\Item\OrderPropertyWidget;
+use Ceres\Widgets\Item\SetDraftWidget;
 use Ceres\Widgets\Item\TagsWidget;
 use Ceres\Widgets\Item\WishListWidget;
 use Ceres\Widgets\Legal\LegalTextsWidget;
@@ -189,6 +190,7 @@ class WidgetCollection
         ItemImageWidget::class,
         ItemPriceWidget::class,
         OrderPropertyWidget::class,
+        SetDraftWidget::class,
         WishListWidget::class,
         TagsWidget::class
     ];
