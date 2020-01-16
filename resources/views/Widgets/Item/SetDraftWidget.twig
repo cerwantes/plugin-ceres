@@ -1,56 +1,53 @@
 <div class="widget">
-
     {% for i in 1..4 %}
+        <div class="row">
 
-    <div class="row">
-
-        <div class="col-4">
-            <div class="square-container">
-                <div class="square-inner main-image">
-                    <a href="/coca-cola_136_1086">
-                        <img src="http://master.plentymarkets.com/documents/image/13/136/coca-cola-0-5l.jpg" alt="Coca Cola" title="Coca Cola">
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-8 pl-0">
-            <div>
-                <a class="text-appearance" href="/coca-cola_136_1086">Coca Cola</a>
-            </div>
-            <div class="text-muted small">
-                Inhalt
-                <span>500</span> <span>Milliliter</span>
-            </div>
-
-
-            <div class="input-unit mt-2 mb-1">
-                <select class="custom-select">
-                    <option>Einzelflasche</option>
-                    <option>6er Träger</option>
-                </select>
-                <label>Verpackung</label>
-            </div>
-            
-            <div>
-                <span class="text-muted">Inhalt:</span>
-                <b>500 ml</b>
-                <div class="v-s-boxes">
-                    <div class="v-s-box bg-white active">
-                        <span class="mx-3">500 ml</span>
-                    </div>
-                    <div class="v-s-box bg-white">
-                        <span class="mx-3">1000 ml</span>
+            <div class="col-4">
+                <div class="square-container">
+                    <div class="square-inner main-image">
+                        <a href="/coca-cola_136_1086">
+                            <img src="http://master.plentymarkets.com/documents/image/13/136/coca-cola-0-5l.jpg" alt="Coca Cola" title="Coca Cola">
+                        </a>
                     </div>
                 </div>
             </div>
 
+            <div class="col-8 pl-0">
+                <div>
+                    <a class="h4 text-appearance" href="/coca-cola_136_1086">Coca Cola</a>
+                </div>
+                <div class="text-muted small">
+                    Inhalt
+                    <span>500</span> <span>Milliliter</span>
+                </div>
+
+                <div class="input-unit my-3">
+                    <select class="custom-select">
+                        <option>Einzelflasche</option>
+                        <option>6er Träger</option>
+                    </select>
+                    <label>Verpackung</label>
+                </div>
+                
+                <div>
+                    <span class="text-muted">Inhalt:</span>
+                    <b>500 ml</b>
+                    <div class="v-s-boxes">
+                        <div class="v-s-box bg-white active">
+                            <span class="mx-3">500 ml</span>
+                        </div>
+                        <div class="v-s-box bg-white">
+                            <span class="mx-3">1000 ml</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
 
-    </div>
-
-    <br>
-    <hr>
-    <br>
-{% endfor %}
+        <br>
+        <hr>
+        <br>
+    {% endfor %}
 </div>
