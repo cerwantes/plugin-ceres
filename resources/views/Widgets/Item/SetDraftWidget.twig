@@ -1,5 +1,72 @@
 <div class="widget">
-    {% for i in 1..4 %}
+
+
+<div class="accordion" id="accordionExample">
+    <div class="card">
+        <a class="card-header text-dark p-3" id="headingOne" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <span>Jutebeutel:</span>
+            <span class="font-weight-bold">pink panda</span>
+        </a>
+
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+
+                <div class="row">
+                    <div class="col-4">
+                        <div class="square-container">
+                            <div class="square-inner main-image">
+                                <a href="/coca-cola_136_1086">
+                                    <img src="https://cdndev.plentymarkets.com/134/frontend/Sets/Bilder_fuer_Beispielartikel/jutebeutel_panda_pink.jpg" alt="Coca Cola" title="Coca Cola">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-8 pl-0">
+                        <div>
+                            <a class="h4 text-appearance" href="/coca-cola_136_1086">Jutebeutel aus biologischem Anbau</a>
+                        </div>
+
+                        <div>
+                            <span class="text-muted">Motiv:</span>
+                            <b>panda</b>
+                            <div class="v-s-boxes">
+                                <div class="v-s-box bg-white active">
+                                    <span class="mx-3">panda</span>
+                                </div>
+                                <div class="v-s-box bg-white">
+                                    <span class="mx-3">unicorn</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <span class="text-muted">Farbe:</span> <b>pink</b>
+                            <div class="v-s-boxes images">
+                                <div data-toggle="tooltip" data-placement="top" class="v-s-box bg-white active">
+                                    <div class="p-1" style="height: 100%; width: 100%;">
+                                        <div style="height: 100%; width: 100%; background-color: #EC1571;"></div>
+                                    </div>
+                                </div>
+                                <div data-toggle="tooltip" data-placement="top" class="v-s-box bg-white">
+                                    <div class="p-1" style="height: 100%; width: 100%;">
+                                        <div style="height: 100%; width: 100%; background-color: #ECDFD6;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    {% for i in 1..4 if false %}
         <div class="row">
 
             <div class="col-4">
