@@ -1,5 +1,8 @@
+{% set draftVersion = widget.settings.draftVersion.mobile %}
+
 <div class="widget">
 
+{% if draftVersion == 1 %}
 
 <div class="accordion" id="accordionExample">
     <div class="card">
@@ -102,9 +105,7 @@
     </div>
 </div>
 
-<br>
-<hr>
-<br>
+{% elseif draftVersion == 2 %}
 
 <div class="accordion" id="accordionExample2">
     <div class="card">
@@ -235,15 +236,61 @@
         </a>
         <div id="sonnenbrille2" class="collapse collapsed" aria-labelledby="headingOne2" data-parent="#accordionExample2">
             <div class="card-body">
-                <h1>faplef</h1>
+                <div class="row">
+                    <div class="col-1 d-flex">
+                        <input style="align-self: center;" type="radio" id="defaultCheck5" name="radio" checked>
+                    </div>
+                    <div class="col-3">
+                        <div class="square-container">
+                            <div class="square-inner main-image">
+                                <label for="defaultCheck5">
+                                    <img src="https://cdndev.plentymarkets.com/134/frontend/Sets/Bilder_fuer_Beispielartikel/retro_steampunk_sonnenbrille_braun_braun.jpg">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <a class="h4 text-appearance" href="/coca-cola_136_1086">Sonnenbrille braun</a>
+                        <div>
+                            <span>Farbe:</span>
+                            <strong>braun</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 d-flex">
+                        <input style="align-self: center;" type="radio" id="defaultCheck6" name="radio">
+                    </div>
+                    <div class="col-3">
+                        <div class="square-container">
+                            <div class="square-inner main-image">
+                                <label for="defaultCheck6">
+                                    <img src="https://cdndev.plentymarkets.com/134/frontend/Sets/Bilder_fuer_Beispielartikel/retro_steampunk_sonnenbrille_gold_rot.jpg">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <a class="h4 text-appearance" href="/coca-cola_136_1086">Sonnenbrille gold</a>
+                        <div>
+                            <span>Farbe:</span>
+                            <strong>gold</strong>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div>+ 1,50 €</div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
+{% else %}
 
 
-    {% for i in 1..4 if false %}
+
+    {% for i in 1..4 %}
         <div class="row">
 
             <div class="col-4">
@@ -294,4 +341,5 @@
         <hr>
         <br>
     {% endfor %}
+    {% endif %}
 </div>
