@@ -161,16 +161,18 @@
                 "homepage.showShopBuilderContent": {
                     "type": "checkBox",
                     "required": false,
-                    "deprecated": true,
                     "label": "Config.homepageShowShopBuilderContentLabel",
-                    "options": {}
+                    "options": {
+                        "defaultValue": "true"
+                    }
                 },
                 "default.homepage": {
                     "type": "checkBox",
                     "required": false,
-                    "deprecated": true,
                     "label": "Config.defaultHomepageLabel",
-                    "options": {}
+                    "options": {
+                        "defaultValue": "false"
+                    }
                 },
                 "homepage.sliderItemId1": {
                     "type": "inputText",
